@@ -5,6 +5,10 @@ docker-apache-reverse-proxy
 1. Modify mod_proxy/conf.d/xxx-80.conf   #for you configuration
 2. add cert in ssl forder . #remark if you only used http can't add cert file
 3. modify file docker_entrypoint.sh for change your location
+4. create images from Dockerfile
+```
+  docker build -t="chananun/apache2-reverse-proxy-ssl" .
+```
 
 # how to start 
 ```
