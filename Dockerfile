@@ -26,7 +26,7 @@ ADD docker_entrypoint.sh /docker_entrypoint.sh
 WORKDIR /var/www/html
 
 VOLUME [ "/var/www/html" ]
-VOLUME [ "/var/log/newrelic" ]
+#VOLUME [ "/var/log/newrelic" ]
 
 EXPOSE 80 443
 
