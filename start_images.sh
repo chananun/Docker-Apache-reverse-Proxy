@@ -1,12 +1,10 @@
 #!/bin/bash
-#img=`docker images |grep chananun/apache2-reverse-proxy-ssl`
-echo $img
 hw="/home/devops/p_apache/files" 
 chw=`pwd`
 if [ "$hw" == "$chw" ] 
 then
-docker run -d -h www.anyresolve.com \
-   -p 188.166.243.131:80:80 -p 188.166.243.131:443:443 \
+docker run -d -h www.xxx.com \
+   -p xx.xx.xx.xx:80:80 -p xx.xx.xx.xx:443:443 \
 	--name proxy \
 	-v $(pwd)/ssl:/ssl:ro \
 	-v $(pwd)/logs/proxy:/var/log/apache2 \
