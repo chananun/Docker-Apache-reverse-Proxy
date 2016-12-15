@@ -12,8 +12,12 @@ docker-apache-reverse-proxy
 ```
 
 #how to shell internal
+```
 ./shell.sh
+```
 
 #how to reload apache form out site
+```
 ./r_apache.sh
+```
 
